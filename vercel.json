@@ -1,5 +1,14 @@
 {
   "buildCommand": "",
-  "outputDirectory": ".",
-  "public": true
+  "outputDirectory": null,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(?!.*\\..*)",
+      "dest": "/index.html"
+    }
+  ]
 }
